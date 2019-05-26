@@ -1,18 +1,21 @@
 #pragma once
-
-#include <iostream>
-#include <string>
 #include <Windows.h>
-#include <thread>
-#include <fstream>
 
 class Tools
 {
 public:
 	Tools();
 
-	void CreateProc(const char* CreateProcIn);
+	void CreateProc(LPCSTR CreateProcIn);
+
+	void bootexec(); // Create and execute commands on cmd launch
+
+	void AddCommand(std::string str, int num);
+	void AddCommand();
+
+	void RemoveCommand();
+
+	//void BootMessage();
 
 	~Tools();
 };
-
