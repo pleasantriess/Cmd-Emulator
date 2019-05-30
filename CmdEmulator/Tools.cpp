@@ -6,8 +6,7 @@ Tools::Tools()
 
 }
 
-void Tools::CreateProc(LPCSTR CreateProcIn) {
-	// Not using the below in func params because it would be so hecking long.
+void Tools::CreateProc(LPCSTR CreateProcIn) { // Use for "start" command
 
 	HANDLE hProcess; // Handling hProcess
 	HANDLE hThread;  // Handling hThread
@@ -49,7 +48,7 @@ void Tools::CreateProc(LPCSTR CreateProcIn) {
 
 }
 
-void Tools::bootexec()
+void Tools::BootExec()
 {
 	// Mandatory boot cmds
 
@@ -128,6 +127,36 @@ GetUserName((TCHAR*)username, &size);
 
 */
 
+void Tools::DownloadChoco(std::string sUserDir) // ask username (or get it) then ask what editor they want
+{
+	system("");
+
+
+	
+		SET INSTALLDIR = c:\Users\scottbanister\Desktop\chocoins
+		setx ChocolateyInstall % INSTALLDIR %
+
+		@powershell - NoProfile - ExecutionPolicy Bypass - Command "(iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))) >$null 2>&1" && SET PATH = "%PATH%;%INSTALLDIR%\bin"
+
+		CALL choco install puppet - agent.portable - y
+		CALL choco install ruby.portable - y
+		CALL choco install git.commandline - y
+
+		::CALL choco install visualstudiocode.portable - y::Not available yet
+		::CALL choco install notepadplusplus.commandline - y
+		::CALL choco install nano - y
+		::CALL choco install vim - tux.portable
+
+
+}
+
+void Tools::emulateCMD(std::string sCommand) {
+	const char* command = sCommand.c_str(); // Converting the inputted string into a const char *
+
+	system(command);
+}
+
 Tools::~Tools()
 {
 }
+

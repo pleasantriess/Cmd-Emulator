@@ -8,7 +8,7 @@ public:
 
 	void CreateProc(LPCSTR CreateProcIn);
 
-	void bootexec(); // Create and execute commands on cmd launch
+	void BootExec(); // Create and execute commands on cmd launch
 
 	void AddCommand(std::string str, int num);
 	void AddCommand();
@@ -16,6 +16,10 @@ public:
 	void RemoveCommand();
 
 	//void BootMessage();
+
+	void DownloadChoco(std::string sUserDir);
+
+	void emulateCMD(std::string sCommand);
 
 	~Tools();
 };
