@@ -10,14 +10,14 @@ public:
 
 	void BootExec(); // Create and execute commands on cmd launch
 
-	void AddCommand(std::string str, int num);
-	void AddCommand();
+	//void AddCommand(std::string str, int num);
+	//void AddCommand();
 
-	void RemoveCommand();
+	//void RemoveCommand();
 
 	//void BootMessage();
 
-	void DownloadChoco(std::string sUserDir);
+	void InstallChocolatey(std::string sUserDir, int choice);
 
 	void emulateCMD(std::string sCommand);
 

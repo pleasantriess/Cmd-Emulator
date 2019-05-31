@@ -1,2 +1,8 @@
-﻿  Tools.cpp
-C:\Users\scottbanister\Desktop\Cmd-Emulator\CmdEmulator\Tools.cpp(133): error C2143: syntax error: missing ';' before '}'
+﻿  CmdEmulator.cpp
+  Tools.cpp
+  Generating code
+  0 of 565 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  CmdEmulator.vcxproj -> C:\Users\scott\Documents\GitHub\Cmd-Emulator\x64\Release\Cmd Emulator.exe

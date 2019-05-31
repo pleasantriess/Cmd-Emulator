@@ -64,45 +64,45 @@ void Tools::BootExec()
 }
 
 
-void Tools::AddCommand() {
-	std::ofstream out;
-
-	out.open("asd.txt");
-
-	out << "first number : " << 5 << std::endl;
-
-	out.close();
-
-}
-
-void Tools::AddCommand(std::string str, int num) 
-{
-}
-
-void Tools::RemoveCommand() {
-	std::ifstream in;
-	in.open("lst.txt");
-
-	if (in.fail()) {
-		std::cerr << "Error Opening File" << std::endl;
-		exit(1);
-	}
-
-	int x, y;
-
-	in >> x >> y;
-
-	std::cout << x << " " << y;
-
-	/*
-
-	while(!in.eof())
-	{
-	in >> item; // item being a string
-	}
-	*/
-
-}
+//void Tools::AddCommand() {
+//	std::ofstream out;
+//
+//	out.open("asd.txt");
+//
+//	out << "first number : " << 5 << std::endl;
+//
+//	out.close();
+//
+//}
+//
+//void Tools::AddCommand(std::string str, int num) 
+//{
+//}
+//
+//void Tools::RemoveCommand() {
+//	std::ifstream in;
+//	in.open("lst.txt");
+//
+//	if (in.fail()) {
+//		std::cerr << "Error Opening File" << std::endl;
+//		exit(1);
+//	}
+//
+//	int x, y;
+//
+//	in >> x >> y;
+//
+//	std::cout << x << " " << y;
+//
+//	/*
+//
+//	while(!in.eof())
+//	{
+//	in >> item; // item being a string
+//	}
+//	*/
+//
+//}
 
 //void Tools::BootMessage() { // add this to boot exec command eventually
 //
@@ -127,25 +127,59 @@ GetUserName((TCHAR*)username, &size);
 
 */
 
-void Tools::DownloadChoco(std::string sUserDir) // ask username (or get it) then ask what editor they want
+void Tools::InstallChocolatey(std::string sUserDir, int choice) // ask username (or get it) then ask what editor they want
 {
-	system("");
+	int iErrorCheck = 0;
+
+	system("SET INSTALLDIR = c:\\Users\\scottbanister\\Desktop\\chocoins");
+	system("setx ChocolateyInstall % INSTALLDIR %");
+	system("@powershell - NoProfile - ExecutionPolicy Bypass - Command \"(iex((new - object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))) > $null 2 > & 1\" && SET PATH = \" % PATH%; % INSTALLDIR % \bin\"");
+	system("CALL choco install puppet - agent.portable - y");
+	system("CALL choco install ruby.portable - y");
+	system("CALL choco install git.commandline - y");
+	system("CALL choco install notepadplusplus.commandline - y");
+
+	do {
+		if (iErrorCheck < 0) {
+			std::cout << "please enter an integer\n\n" << std::endl;
+		}
+
+		std::cout << "What text editor would you like to install? \n" << std::endl;
+		std::cout << "1: nano" << std::endl;
+		std::cout << "2: vim " << std::endl;
+		//std::cout << "3: vs code " << std::endl;
+		std::cout << "3	: all of them" << std::endl;
+
+		std::cin >> choice; // need to error check
+		
+		iErrorCheck++;
+	} while (isalpha(choice));
 
 
-	
-		SET INSTALLDIR = c:\Users\scottbanister\Desktop\chocoins
-		setx ChocolateyInstall % INSTALLDIR %
 
-		@powershell - NoProfile - ExecutionPolicy Bypass - Command "(iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))) >$null 2>&1" && SET PATH = "%PATH%;%INSTALLDIR%\bin"
 
-		CALL choco install puppet - agent.portable - y
-		CALL choco install ruby.portable - y
-		CALL choco install git.commandline - y
+	switch (choice)
+	{
+		case 1:
+			system("CALL choco install nano - y");
+			break;
+		case 2:
+			system("CALL choco install vim - tux.portable");
+			break;
+		case 3:
+			system("CALL choco install visualstudiocode.portable - y");
+			system("CALL choco install vim - tux.portable");
+			system("CALL choco install nano - y");
+			break;
+		default:
+			std::cout << "You literally failed to enter a number within the range. smh.\n I guess I'll just install all of them for you :P" << std::endl;
+			system("CALL choco install visualstudiocode.portable - y");
+			system("CALL choco install vim - tux.portable");
+			system("CALL choco install nano - y");
+			break;
+	}
 
-		::CALL choco install visualstudiocode.portable - y::Not available yet
-		::CALL choco install notepadplusplus.commandline - y
-		::CALL choco install nano - y
-		::CALL choco install vim - tux.portable
+		//::CALL choco install visualstudiocode.portable - y
 
 
 }
