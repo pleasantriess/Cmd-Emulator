@@ -1,3 +1,4 @@
+#pragma once
 #include "includes.h"
 
 
@@ -56,76 +57,8 @@ void Tools::BootExec()
 	system("cls");
 
 	//---------------------
-
-
-	// cd to users folder and not the location of the exe
-	// need to add some sort of hash to obfuscate the commands / info while exe is running
-	// cls
 }
 
-
-//void Tools::AddCommand() {
-//	std::ofstream out;
-//
-//	out.open("asd.txt");
-//
-//	out << "first number : " << 5 << std::endl;
-//
-//	out.close();
-//
-//}
-//
-//void Tools::AddCommand(std::string str, int num) 
-//{
-//}
-//
-//void Tools::RemoveCommand() {
-//	std::ifstream in;
-//	in.open("lst.txt");
-//
-//	if (in.fail()) {
-//		std::cerr << "Error Opening File" << std::endl;
-//		exit(1);
-//	}
-//
-//	int x, y;
-//
-//	in >> x >> y;
-//
-//	std::cout << x << " " << y;
-//
-//	/*
-//
-//	while(!in.eof())
-//	{
-//	in >> item; // item being a string
-//	}
-//	*/
-//
-//}
-
-//void Tools::BootMessage() { // add this to boot exec command eventually
-//
-//	TCHAR username[UNLEN + 1];
-//	DWORD size = UNLEN + 1;
-//	GetUserNameA((TCHAR*)username, &size);
-//
-//	std::cout << "Welcome to the cmd emulator, " << username << "! The terminal perfect for using at school or work!" << std::endl;
-//	
-//}
-
-
-/*
-
-char username[UNLEN+1];
-DWORD username_len = UNLEN+1;
-GetUserName(username, &username_len);
-
-TCHAR username[UNLEN + 1];
-DWORD size = UNLEN + 1;
-GetUserName((TCHAR*)username, &size);
-
-*/
 
 void Tools::InstallChocolatey(std::string sUserDir, int choice) // ask username (or get it) then ask what editor they want
 {
@@ -151,13 +84,13 @@ void Tools::InstallChocolatey(std::string sUserDir, int choice) // ask username 
 		std::cout << "3	: all of them" << std::endl;
 
 		std::cin >> choice; // need to error check
-		
+
 		iErrorCheck++;
 	} while (isalpha(choice));
 
+	iErrorCheck = 0;
 
-
-
+do {
 	switch (choice)
 	{
 		case 1:
@@ -178,6 +111,8 @@ void Tools::InstallChocolatey(std::string sUserDir, int choice) // ask username 
 			system("CALL choco install nano - y");
 			break;
 	}
+} while(iErrorCheck >= 0);
+
 
 		//::CALL choco install visualstudiocode.portable - y
 
@@ -190,7 +125,16 @@ void Tools::emulateCMD(std::string sCommand) {
 	system(command);
 }
 
+TCHAR GetUsername()
+{
+	TCHAR username[UNLEN + 1];
+	DWORD size = UNLEN + 1; // Getting size of the username + 1 (for esc character)
+
+	GetUserNameA((TCHAR*)username, &size); // Getting logged in user
+
+	return username;
+}
+
 Tools::~Tools()
 {
 }
-

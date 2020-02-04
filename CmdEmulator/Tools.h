@@ -21,5 +21,7 @@ public:
 
 	void emulateCMD(std::string sCommand);
 
+	TCHAR GetUsername();
+
 	~Tools();
 };
