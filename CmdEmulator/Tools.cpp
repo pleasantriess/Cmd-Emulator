@@ -20,7 +20,7 @@ void Tools::CreateProc(LPCSTR CreateProcIn) { // Use for "start" command
 	DWORD dwThreadID;
 
 	ZeroMemory(&procinfo, sizeof(procinfo)); // Setting the memory location of procinfo to NULL
-	ZeroMemory(&startup, sizeof(startup));  // Setting the memory location of startup  to NULL
+	ZeroMemory(&startup, sizeof(startup));   // Setting the memory location of startup  to NULL
 
 	BOOL bCreateProcess = false;
 
@@ -60,11 +60,24 @@ void Tools::BootExec()
 }
 
 
-void Tools::InstallChocolatey(std::string sUserDir, int choice) // ask username (or get it) then ask what editor they want
+void Tools::InstallChocolatey() // ask username (or get it) then ask what editor they want
 {
 	int iErrorCheck = 0;
+	int iChoice = 0;
 
-	system("SET INSTALLDIR = c:\\Users\\scottbanister\\Desktop\\chocoins");
+	std::string sSetInstallDir = "SET INSTALLDIR = ";
+	std::string sInstallDir = "";
+	std::string sSum = "";
+
+
+	std::cout << "Enter a directory for installation:  ";
+	std::cin  >> sInstallDir;
+
+	sSum = sSetInstallDir + sInstallDir;
+	const char* ccSum = sSum.c_str;
+	
+
+	system(ccSum);
 	system("setx ChocolateyInstall % INSTALLDIR %");
 	system("@powershell - NoProfile - ExecutionPolicy Bypass - Command \"(iex((new - object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))) > $null 2 > & 1\" && SET PATH = \" % PATH%; % INSTALLDIR % \bin\"");
 	system("CALL choco install puppet - agent.portable - y");
@@ -83,15 +96,15 @@ void Tools::InstallChocolatey(std::string sUserDir, int choice) // ask username 
 		//std::cout << "3: vs code " << std::endl;
 		std::cout << "3	: all of them" << std::endl;
 
-		std::cin >> choice; // need to error check
+		std::cin >> iChoice; // need to error check
 
 		iErrorCheck++;
-	} while (isalpha(choice));
+	} while (isalpha(iChoice));
 
 	iErrorCheck = 0;
 
 do {
-	switch (choice)
+	switch (iChoice)
 	{
 		case 1:
 			system("CALL choco install nano - y");
@@ -125,14 +138,15 @@ void Tools::emulateCMD(std::string sCommand) {
 	system(command);
 }
 
-TCHAR GetUsername()
+TCHAR Tools::GetUsername()
 {
-	TCHAR username[UNLEN + 1];
+	TCHAR user[UNLEN + 1];
 	DWORD size = UNLEN + 1; // Getting size of the username + 1 (for esc character)
 
-	GetUserNameA((TCHAR*)username, &size); // Getting logged in user
+	TCHAR cUsername = GetUserNameA((TCHAR*)user, &size); // Getting logged in user
+	
 
-	return username;
+	return cUsername;
 }
 
 Tools::~Tools()

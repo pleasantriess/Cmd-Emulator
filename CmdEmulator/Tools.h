@@ -17,7 +17,7 @@ public:
 
 	//void BootMessage();
 
-	void InstallChocolatey(std::string sUserDir, int choice);
+	void InstallChocolatey();
 
 	void emulateCMD(std::string sCommand);
 
