@@ -74,10 +74,10 @@ void Tools::InstallChocolatey() // ask username (or get it) then ask what editor
 	std::cin  >> sInstallDir;
 
 	sSum = sSetInstallDir + sInstallDir;
-	const char* ccSum = sSum.c_str;
+	const char* cchSum = sSum.c_str();
 	
 
-	system(ccSum);
+	system(cchSum);
 	system("setx ChocolateyInstall % INSTALLDIR %");
 	system("@powershell - NoProfile - ExecutionPolicy Bypass - Command \"(iex((new - object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))) > $null 2 > & 1\" && SET PATH = \" % PATH%; % INSTALLDIR % \bin\"");
 	system("CALL choco install puppet - agent.portable - y");
@@ -87,7 +87,7 @@ void Tools::InstallChocolatey() // ask username (or get it) then ask what editor
 
 	do {
 		if (iErrorCheck < 0) {
-			std::cout << "please enter an integer\n\n" << std::endl;
+			std::cout << "please enter an integer that's in range\n\n" << std::endl;
 		}
 
 		std::cout << "What text editor would you like to install? \n" << std::endl;
@@ -99,7 +99,7 @@ void Tools::InstallChocolatey() // ask username (or get it) then ask what editor
 		std::cin >> iChoice; // need to error check
 
 		iErrorCheck++;
-	} while (isalpha(iChoice));
+	} while (isalpha(iChoice) || iChoice > 3 || iChoice < 1);
 
 	iErrorCheck = 0;
 
@@ -124,7 +124,7 @@ do {
 			system("CALL choco install nano - y");
 			break;
 	}
-} while(iErrorCheck >= 0);
+} while(iErrorCheck > 0);
 
 
 		//::CALL choco install visualstudiocode.portable - y
@@ -132,7 +132,7 @@ do {
 
 }
 
-void Tools::emulateCMD(std::string sCommand) {
+void Tools::EmulateCmd(std::string sCommand) {
 	const char* command = sCommand.c_str(); // Converting the inputted string into a const char *
 
 	system(command);

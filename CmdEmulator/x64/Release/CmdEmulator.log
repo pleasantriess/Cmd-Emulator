@@ -1,2 +1,568 @@
-﻿  Tools.cpp
-C:\Users\scott\Documents\GitHub\Cmd-Emulator\CmdEmulator\Tools.cpp(77,32): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::c_str': non-standard syntax; use '&' to create a pointer to member
+﻿  CmdEmulator.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\malloc.h(45,1): warning C4820:  '_heapinfo': '4' bytes padding added after data member '_heapinfo::_useflag'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\vcruntime_exception.h(25,1): warning C4820:  '__std_exception_data': '7' bytes padding added after data member '__std_exception_data::_DoFree'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xmemory(1373,1): warning C4626:  'std::_Basic_container_proxy_ptr12': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(159,33): warning C4820:  'std::error_code': '4' bytes padding added after data member 'std::error_code::_Myval'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(212,33): warning C4820:  'std::error_condition': '4' bytes padding added after data member 'std::error_condition::_Myval'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C4625:  'std::_Generic_error_category': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C5026:  'std::_Generic_error_category': move constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C4626:  'std::_Generic_error_category': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C5027:  'std::_Generic_error_category': move assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C4625:  'std::_Iostream_error_category': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C5026:  'std::_Iostream_error_category': move constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C4626:  'std::_Iostream_error_category': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C5027:  'std::_Iostream_error_category': move assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C4625:  'std::_System_error_category': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C5026:  'std::_System_error_category': move constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C4626:  'std::_System_error_category': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C5027:  'std::_System_error_category': move assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\vcruntime_typeinfo.h(44,1): warning C4820:  '__std_type_info_data': '7' bytes padding added after data member '__std_type_info_data::_DecoratedName'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo.h(61,25): warning C4820:  '_Collvec': '4' bytes padding added after data member '_Collvec::_Page'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo.h(66,24): warning C4820:  '_Ctypevec': '4' bytes padding added after data member '_Ctypevec::_Page'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo.h(68,25): warning C4820:  '_Ctypevec': '4' bytes padding added after data member '_Ctypevec::_Delfl'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xutility(3442,1): warning C4820:  'std::_Yarn<char>': '7' bytes padding added after data member 'std::_Yarn<char>::_Nul'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo(202): message :  see reference to class template instantiation 'std::_Yarn<char>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo(202,22): warning C4820:  'std::_Locinfo': '4' bytes padding added after data member 'std::_Locinfo::_Lock'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xutility(3442,1): warning C4820:  'std::_Yarn<wchar_t>': '6' bytes padding added after data member 'std::_Yarn<wchar_t>::_Nul'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo(204): message :  see reference to class template instantiation 'std::_Yarn<wchar_t>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(158,5): warning C4820:  'std::locale::facet': '4' bytes padding added after data member 'std::locale::facet::_Myrefs'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(219,26): warning C4820:  'std::locale::_Locimp': '3' bytes padding added after data member 'std::locale::_Locimp::_Xparent'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(407,18): warning C4820:  'std::locale': '7' bytes padding added after base class 'std::_Crt_new_delete'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(695,1): warning C4625:  'std::codecvt_base': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(695,1): warning C4626:  'std::codecvt_base': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1175,1): warning C4625:  'std::codecvt<char16_t,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1175,1): warning C4626:  'std::codecvt<char16_t,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1410,1): warning C4625:  'std::codecvt<char32_t,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1410,1): warning C4626:  'std::codecvt<char32_t,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2156,1): warning C4820:  'std::codecvt<wchar_t,char,mbstate_t>': '4' bytes padding added after data member 'std::codecvt<wchar_t,char,mbstate_t>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2156,1): warning C4625:  'std::codecvt<wchar_t,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2156,1): warning C4626:  'std::codecvt<wchar_t,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2359,1): warning C4820:  'std::codecvt<unsigned short,char,mbstate_t>': '4' bytes padding added after data member 'std::codecvt<unsigned short,char,mbstate_t>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2359,1): warning C4625:  'std::codecvt<unsigned short,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2359,1): warning C4626:  'std::codecvt<unsigned short,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2405,1): warning C4625:  'std::ctype_base': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2405,1): warning C4626:  'std::ctype_base': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2836,1): warning C4625:  'std::ctype<char>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2836,1): warning C4626:  'std::ctype<char>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3039,1): warning C4820:  'std::ctype<wchar_t>': '4' bytes padding added after data member 'std::ctype<wchar_t>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3039,1): warning C4625:  'std::ctype<wchar_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3039,1): warning C4626:  'std::ctype<wchar_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3243,1): warning C4820:  'std::ctype<unsigned short>': '4' bytes padding added after data member 'std::ctype<unsigned short>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3243,1): warning C4625:  'std::ctype<unsigned short>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3243,1): warning C4626:  'std::ctype<unsigned short>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xiosbase(523,28): warning C4820:  'std::ios_base::_Fnarray': '4' bytes padding added after data member 'std::ios_base::_Fnarray::_Index'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xiosbase(573,21): warning C4820:  'std::ios_base': '4' bytes padding added after data member 'std::ios_base::_Fmtfl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039:  'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10229,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10235,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10240,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10244,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10251,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10261,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10265,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10270,22): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10277,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10280,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10283,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10288,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10291,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10486,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10510,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(13950,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14134,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14237,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14333,21): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14437,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15094,23): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15111,22): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15128,23): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15147,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15266,22): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15416,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15429,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15657,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(36,1): warning C4820:  '_timespec64': '4' bytes padding added after data member '_timespec64::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(43,5): warning C4820:  'timespec': '4' bytes padding added after data member 'timespec::tv_nsec'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\thr\xtimec.h(22,1): warning C4820:  'xtime': '4' bytes padding added after data member 'xtime::nsec'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\thr\xthreads.h(21,1): warning C4820:  '<unnamed-tag>': '4' bytes padding added after data member '<unnamed-tag>::_Id'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ios(166,1): warning C4820:  'std::basic_ios<char,std::char_traits<char>>': '7' bytes padding added after data member 'std::basic_ios<char,std::char_traits<char>>::_Fillch'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(20): message :  see reference to class template instantiation 'std::basic_ios<char,std::char_traits<char>>' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(78): message :  see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\chrono(591): message :  see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\chrono(169): message :  see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\chrono(570): message :  see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(547,1): warning C4820:  'std::basic_ostream<char,std::char_traits<char>>': '4' bytes padding added after data member 'std::basic_ostream<char,std::char_traits<char>>::{vbptr}'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(659,1): warning C4820:  'std::basic_istream<char,std::char_traits<char>>': '4' bytes padding added after data member 'std::basic_istream<char,std::char_traits<char>>::_Chcount'
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(85): message :  see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(504,59): warning C4774:  '_scprintf' : format string expected in argument 1 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(504,59): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(504,59): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :  see reference to function template instantiation 'std::string std::_Floating_to_string<float>(const char *,_Ty)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :             _Ty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(506,41): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(506,41): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(506,41): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(514,60): warning C4774:  '_scwprintf' : format string expected in argument 1 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(514,60): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(514,60): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :  see reference to function template instantiation 'std::wstring std::_Floating_to_wstring<float>(const wchar_t *,_Ty)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :             _Ty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(516,42): warning C4774:  'swprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(516,42): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(516,42): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(127,1): warning C4820:  'std::basic_ostream<char,std::char_traits<char>>::sentry': '7' bytes padding added after data member 'std::basic_ostream<char,std::char_traits<char>>::sentry::_Ok'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(702): message :  see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>::sentry' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(78): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(731,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(768,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(78): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(480,13): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :  while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::put(_Elem)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::put(_Elem)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :         ]
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(78): message :  see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(148,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(141): message :  while compiling class template member function 'void std::basic_ostream<char,std::char_traits<char>>::_Osfx(void)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(106): message :  see reference to function template instantiation 'void std::basic_ostream<char,std::char_traits<char>>::_Osfx(void)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(111,1): warning C4820:  'std::basic_istream<char,std::char_traits<char>>::sentry': '7' bytes padding added after data member 'std::basic_istream<char,std::char_traits<char>>::sentry::_Ok'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(29): message :  see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>::sentry' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(80): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::getline<char,std::char_traits<char>,std::allocator<char>>(std::basic_istream<char,std::char_traits<char>> &&,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,const _Elem)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(80): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(80): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(80): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(80): message :         ]
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(85): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::getline<char,std::char_traits<char>,std::allocator<char>>(std::basic_istream<char,std::char_traits<char>> &,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(53,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(139,13): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(113): message :  while compiling class template member function 'bool std::basic_istream<char,std::char_traits<char>>::_Ipfx(bool)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(99): message :  see reference to function template instantiation 'bool std::basic_istream<char,std::char_traits<char>>::_Ipfx(bool)' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(85): message :  see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710:  'int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message :  see declaration of 'swprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710:  'int _scwprintf(const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message :  see declaration of '_scwprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710:  'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message :  see declaration of 'sprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710:  'int _scprintf(const char *const ,...)': function not inlined
+  Tools.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message :  see declaration of '_scprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\malloc.h(45,1): warning C4820:  '_heapinfo': '4' bytes padding added after data member '_heapinfo::_useflag'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\vcruntime_exception.h(25,1): warning C4820:  '__std_exception_data': '7' bytes padding added after data member '__std_exception_data::_DoFree'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xmemory(1373,1): warning C4626:  'std::_Basic_container_proxy_ptr12': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(159,33): warning C4820:  'std::error_code': '4' bytes padding added after data member 'std::error_code::_Myval'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(212,33): warning C4820:  'std::error_condition': '4' bytes padding added after data member 'std::error_condition::_Myval'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C4625:  'std::_Generic_error_category': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C5026:  'std::_Generic_error_category': move constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C4626:  'std::_Generic_error_category': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(414,1): warning C5027:  'std::_Generic_error_category': move assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C4625:  'std::_Iostream_error_category': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C5026:  'std::_Iostream_error_category': move constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C4626:  'std::_Iostream_error_category': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(434,1): warning C5027:  'std::_Iostream_error_category': move assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C4625:  'std::_System_error_category': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C5026:  'std::_System_error_category': move constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C4626:  'std::_System_error_category': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\system_error(471,1): warning C5027:  'std::_System_error_category': move assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\vcruntime_typeinfo.h(44,1): warning C4820:  '__std_type_info_data': '7' bytes padding added after data member '__std_type_info_data::_DecoratedName'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo.h(61,25): warning C4820:  '_Collvec': '4' bytes padding added after data member '_Collvec::_Page'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo.h(66,24): warning C4820:  '_Ctypevec': '4' bytes padding added after data member '_Ctypevec::_Page'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo.h(68,25): warning C4820:  '_Ctypevec': '4' bytes padding added after data member '_Ctypevec::_Delfl'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xutility(3442,1): warning C4820:  'std::_Yarn<char>': '7' bytes padding added after data member 'std::_Yarn<char>::_Nul'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo(202): message :  see reference to class template instantiation 'std::_Yarn<char>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo(202,22): warning C4820:  'std::_Locinfo': '4' bytes padding added after data member 'std::_Locinfo::_Lock'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xutility(3442,1): warning C4820:  'std::_Yarn<wchar_t>': '6' bytes padding added after data member 'std::_Yarn<wchar_t>::_Nul'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocinfo(204): message :  see reference to class template instantiation 'std::_Yarn<wchar_t>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(158,5): warning C4820:  'std::locale::facet': '4' bytes padding added after data member 'std::locale::facet::_Myrefs'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(219,26): warning C4820:  'std::locale::_Locimp': '3' bytes padding added after data member 'std::locale::_Locimp::_Xparent'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(407,18): warning C4820:  'std::locale': '7' bytes padding added after base class 'std::_Crt_new_delete'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(695,1): warning C4625:  'std::codecvt_base': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(695,1): warning C4626:  'std::codecvt_base': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1175,1): warning C4625:  'std::codecvt<char16_t,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1175,1): warning C4626:  'std::codecvt<char16_t,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1410,1): warning C4625:  'std::codecvt<char32_t,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(1410,1): warning C4626:  'std::codecvt<char32_t,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2156,1): warning C4820:  'std::codecvt<wchar_t,char,mbstate_t>': '4' bytes padding added after data member 'std::codecvt<wchar_t,char,mbstate_t>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2156,1): warning C4625:  'std::codecvt<wchar_t,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2156,1): warning C4626:  'std::codecvt<wchar_t,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2359,1): warning C4820:  'std::codecvt<unsigned short,char,mbstate_t>': '4' bytes padding added after data member 'std::codecvt<unsigned short,char,mbstate_t>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2359,1): warning C4625:  'std::codecvt<unsigned short,char,mbstate_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2359,1): warning C4626:  'std::codecvt<unsigned short,char,mbstate_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2405,1): warning C4625:  'std::ctype_base': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2405,1): warning C4626:  'std::ctype_base': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2836,1): warning C4625:  'std::ctype<char>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(2836,1): warning C4626:  'std::ctype<char>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3039,1): warning C4820:  'std::ctype<wchar_t>': '4' bytes padding added after data member 'std::ctype<wchar_t>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3039,1): warning C4625:  'std::ctype<wchar_t>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3039,1): warning C4626:  'std::ctype<wchar_t>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3243,1): warning C4820:  'std::ctype<unsigned short>': '4' bytes padding added after data member 'std::ctype<unsigned short>::_Cvt'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3243,1): warning C4625:  'std::ctype<unsigned short>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocale(3243,1): warning C4626:  'std::ctype<unsigned short>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xiosbase(523,28): warning C4820:  'std::ios_base::_Fnarray': '4' bytes padding added after data member 'std::ios_base::_Fnarray::_Index'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xiosbase(573,21): warning C4820:  'std::ios_base': '4' bytes padding added after data member 'std::ios_base::_Fmtfl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039:  'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10229,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10235,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10240,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10244,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10251,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10261,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10265,22): warning C4668:  '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10270,22): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10277,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10280,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10283,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10288,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10291,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10486,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10510,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(13950,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14134,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14237,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14333,21): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14437,22): warning C4668:  '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15094,23): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15111,22): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15128,23): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15147,22): warning C4668:  '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15266,22): warning C4668:  '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15416,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15429,22): warning C4668:  '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15657,22): warning C4668:  '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(36,1): warning C4820:  '_timespec64': '4' bytes padding added after data member '_timespec64::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(43,5): warning C4820:  'timespec': '4' bytes padding added after data member 'timespec::tv_nsec'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\thr\xtimec.h(22,1): warning C4820:  'xtime': '4' bytes padding added after data member 'xtime::nsec'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\thr\xthreads.h(21,1): warning C4820:  '<unnamed-tag>': '4' bytes padding added after data member '<unnamed-tag>::_Id'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ios(166,1): warning C4820:  'std::basic_ios<char,std::char_traits<char>>': '7' bytes padding added after data member 'std::basic_ios<char,std::char_traits<char>>::_Fillch'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(20): message :  see reference to class template instantiation 'std::basic_ios<char,std::char_traits<char>>' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(32): message :  see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\chrono(591): message :  see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\chrono(169): message :  see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\chrono(570): message :  see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(547,1): warning C4820:  'std::basic_ostream<char,std::char_traits<char>>': '4' bytes padding added after data member 'std::basic_ostream<char,std::char_traits<char>>::{vbptr}'
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(13,9): warning C4101:  'hThread': unreferenced local variable
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(12,9): warning C4101:  'hProcess': unreferenced local variable
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(19,8): warning C4101:  'dwProcessId': unreferenced local variable
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(20,8): warning C4101:  'dwThreadID': unreferenced local variable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(659,1): warning C4820:  'std::basic_istream<char,std::char_traits<char>>': '4' bytes padding added after data member 'std::basic_istream<char,std::char_traits<char>>::_Chcount'
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(74): message :  see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(146,53): warning C4242:  'initializing': conversion from 'BOOL' to 'TCHAR', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(127,1): warning C4820:  'std::basic_ostream<char,std::char_traits<char>>::sentry': '7' bytes padding added after data member 'std::basic_ostream<char,std::char_traits<char>>::sentry::_Ok'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(306): message :  see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>::sentry' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(304): message :  while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(34): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(32): message :  see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4625:  'std::num_put<_Elem,std::ostreambuf_iterator<_Elem,_Traits>>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4625:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4625:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4625:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4625:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4625:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :  see reference to class template instantiation 'std::num_put<_Elem,std::ostreambuf_iterator<_Elem,_Traits>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4626:  'std::num_put<_Elem,std::ostreambuf_iterator<_Elem,_Traits>>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4626:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4626:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4626:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4626:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1522,1): warning C4626:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(588,1): warning C4820:  'std::ostreambuf_iterator<_Elem,_Traits>': '7' bytes padding added after data member 'std::ostreambuf_iterator<_Elem,_Traits>::_Failed'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(588,1): warning C4820:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(588,1): warning C4820:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(588,1): warning C4820:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(588,1): warning C4820:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(588,1): warning C4820:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :  see reference to class template instantiation 'std::ostreambuf_iterator<_Elem,_Traits>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(315,13): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1318,53): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1318,53): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1318,53): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1304): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,long double) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1304): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1304): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1304): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1304): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1304): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :  see reference to class template instantiation 'std::num_put<_Elem,std::ostreambuf_iterator<_Elem,_Traits>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(312): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(304): message :  while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(34): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1298,53): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1298,53): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1298,53): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1284): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,double) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1284): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1284): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1284): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1284): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1284): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1280,74): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1280,74): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1280,74): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1276): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,unsigned __int64) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1276): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1276): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1276): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1276): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1276): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1272,74): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1272,74): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1272,74): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1268): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,__int64) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1268): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1268): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1268): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1268): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1268): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1264,74): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1264,74): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1264,74): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1260): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,unsigned long) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1260): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1260): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1260): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1260): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1260): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1256,74): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1256,74): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1256,74): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1252): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,long) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1252): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1252): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1252): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1252): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1252): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(235,1): warning C4820:  'std::numpunct<_Elem>': '6' bytes padding added after data member 'std::numpunct<_Elem>::_Kseparator'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(235,1): warning C4820:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(235,1): warning C4820:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(235,1): warning C4820:             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(235,1): warning C4820:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1232): message :  see reference to class template instantiation 'std::numpunct<_Elem>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1232): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1232): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1232): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1232): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1225): message :  while compiling class template member function '_OutIt std::num_put<_Elem,_OutIt>::do_put(_OutIt,std::ios_base &,_Elem,bool) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1225): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1225): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1225): message :             _OutIt=std::ostreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1225): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1225): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4625:  'std::numpunct<_Elem>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4625:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4625:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4625:             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4625:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4626:  'std::numpunct<_Elem>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4626:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4626:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4626:             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(237,1): warning C4626:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(148,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(141): message :  while compiling class template member function 'void std::basic_ostream<char,std::char_traits<char>>::_Osfx(void)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(106): message :  see reference to function template instantiation 'void std::basic_ostream<char,std::char_traits<char>>::_Osfx(void)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(504,59): warning C4774:  '_scprintf' : format string expected in argument 1 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(504,59): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(504,59): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :  see reference to function template instantiation 'std::string std::_Floating_to_string<float>(const char *,_Ty)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :             _Ty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(548): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(506,41): warning C4774:  'sprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(506,41): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(506,41): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(514,60): warning C4774:  '_scwprintf' : format string expected in argument 1 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(514,60): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(514,60): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :  see reference to function template instantiation 'std::wstring std::_Floating_to_wstring<float>(const wchar_t *,_Ty)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :             _Ty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(585): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(516,42): warning C4774:  'swprintf_s' : format string expected in argument 3 is not a string literal
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(516,42): message :  e.g. instead of printf(name); use printf("%s", name); because format specifiers in 'name' may pose a security issue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\string(516,42): message :  consider using constexpr specifier for named string literals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(731,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(32): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(111,1): warning C4820:  'std::basic_istream<char,std::char_traits<char>>::sentry': '7' bytes padding added after data member 'std::basic_istream<char,std::char_traits<char>>::sentry::_Ok'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(192): message :  see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>::sentry' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::_Common_extract_with_num_get<long>(_Ty &)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :             _Ty=long
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::_Common_extract_with_num_get<long>(_Ty &)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :             _Ty=long
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(245): message :  while compiling class template member function 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(int &)'
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(99): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(int &)' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(74): message :  see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4625:  'std::num_get<_Elem,std::istreambuf_iterator<_Elem,_Traits>>': copy constructor was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4625:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4625:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4625:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4625:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4625:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :  see reference to class template instantiation 'std::num_get<_Elem,std::istreambuf_iterator<_Elem,_Traits>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4626:  'std::num_get<_Elem,std::istreambuf_iterator<_Elem,_Traits>>': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4626:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4626:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4626:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4626:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(1129,1): warning C4626:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(524,1): warning C4820:  'std::istreambuf_iterator<_Elem,_Traits>': '6' bytes padding added after data member 'std::istreambuf_iterator<_Elem,_Traits>::_Val'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(524,1): warning C4820:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(524,1): warning C4820:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(524,1): warning C4820:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(524,1): warning C4820:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(524,1): warning C4820:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :  see reference to class template instantiation 'std::istreambuf_iterator<_Elem,_Traits>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(197,13): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(449,1): warning C4820:  'std::istreambuf_iterator<_Elem,_Traits>::_Istreambuf_proxy': '7' bytes padding added after data member 'std::istreambuf_iterator<_Elem,_Traits>::_Istreambuf_proxy::_Keep'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(449,1): warning C4820:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(449,1): warning C4820:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(449,1): warning C4820:             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(449,1): warning C4820:             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\streambuf(449,1): warning C4820:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(632): message :  see reference to class template instantiation 'std::istreambuf_iterator<_Elem,_Traits>::_Istreambuf_proxy' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(632): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(632): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(632): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(632): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(632): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(629): message :  while compiling class template member function '_InIt std::num_get<_Elem,_InIt>::do_get(_InIt,_InIt,std::ios_base &,std::ios_base::iostate &,long double &) const'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(629): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(629): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(629): message :             _InIt=std::istreambuf_iterator<char,std::char_traits<char>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(629): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xlocnum(629): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :  see reference to class template instantiation 'std::num_get<_Elem,std::istreambuf_iterator<_Elem,_Traits>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :             _Elem=char,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :             _Traits=std::char_traits<char>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(196): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::_Common_extract_with_num_get<long>(_Ty &)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :             _Ty=long
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::_Common_extract_with_num_get<long>(_Ty &)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :             _Ty=long
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(248): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(480,13): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :  while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::put(_Elem)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(469): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :  see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::put(_Elem)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :             _Elem=char
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\ostream(911): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(139,13): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(113): message :  while compiling class template member function 'bool std::basic_istream<char,std::char_traits<char>>::_Ipfx(bool)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\istream(99): message :  see reference to function template instantiation 'bool std::basic_istream<char,std::char_traits<char>>::_Ipfx(bool)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xstring(4396,9): warning C4571:  Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\include\xstring(4411): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::operator >><char,std::char_traits<char>,std::allocator<char>>(std::basic_istream<char,std::char_traits<char>> &&,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)' being compiled
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(74): message :  see reference to function template instantiation 'std::basic_istream<char,std::char_traits<char>> &std::operator >><char,std::char_traits<char>,std::allocator<char>>(std::basic_istream<char,std::char_traits<char>> &,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)' being compiled
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710:  'int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message :  see declaration of 'swprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710:  'int _scwprintf(const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message :  see declaration of '_scwprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710:  'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message :  see declaration of 'sprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710:  'int _scprintf(const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message :  see declaration of '_scprintf'
+  Generating code
+LINK : fatal error C1001: An internal error has occurred in the compiler.
+  (compiler file 'd:\agent\_work\3\s\src\vctools\Compiler\Utc\src\p2\main.c', line 160)
+   To work around this problem, try simplifying or changing the program near the locations listed above.
+  Please choose the Technical Support command on the Visual C++ 
+   Help menu, or open the Technical Support help file for more information
+    link!InvokeCompilerPass()+0x2ff68
+    link!InvokeCompilerPass()+0x32657
+    link!InvokeCompilerPass()+0x239e2
+    link!InvokeCompilerPass()+0x238fc
+    link!InvokeCompilerPass()+0x2f0aa
+    link!CloseTypeServerPDB()+0x6bb
+    link!CloseTypeServerPDB()+0x601
+  
+LINK : fatal error C1001: An internal error has occurred in the compiler.
+  (compiler file 'd:\agent\_work\3\s\src\vctools\Compiler\Utc\src\p2\main.c', line 160)
+   To work around this problem, try simplifying or changing the program near the locations listed above.
+  Please choose the Technical Support command on the Visual C++ 
+   Help menu, or open the Technical Support help file for more information
+    link!InvokeCompilerPass()+0x2ff68
+    link!InvokeCompilerPass()+0x32657
+    link!InvokeCompilerPass()+0x239e2
+    link!InvokeCompilerPass()+0x238fc
+    link!InvokeCompilerPass()+0x2f0aa
+    link!CloseTypeServerPDB()+0x6bb
+    link!CloseTypeServerPDB()+0x601
+  
+  
+LINK : fatal error LNK1000: Internal error during IMAGE::BuildImage
+  
+    Version 14.22.27812.2
+  
+    ExceptionCode            = C0000005
+    ExceptionFlags           = 00000000
+    ExceptionAddress         = 029849C4 (02500000) "C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.22.27812\bin\HostX86\x64\c2.dll"
+    NumberParameters         = 00000002
+    ExceptionInformation[ 0] = 00000000
+    ExceptionInformation[ 1] = 00000000
+  
+  CONTEXT:
+    Eax    = 00000000  Esp    = 010FE90C
+    Ebx    = 00000000  Ebp    = 010FE91C
+    Ecx    = 00001505  Esi    = 00000000
+    Edx    = 00000000  Edi    = 00000000
+    Eip    = 029849C4  EFlags = 00010246
+    SegCs  = 00000023  SegDs  = 0000002B
+    SegSs  = 0000002B  SegEs  = 0000002B
+    SegFs  = 00000053  SegGs  = 0000002B
+    Dr0    = 00000000  Dr3    = 00000000
+    Dr1    = 00000000  Dr6    = 00000000
+    Dr2    = 00000000  Dr7    = 00000000

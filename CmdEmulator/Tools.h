@@ -19,7 +19,7 @@ public:
 
 	void InstallChocolatey();
 
-	void emulateCMD(std::string sCommand);
+	void EmulateCmd(std::string sCommand);
 
 	TCHAR GetUsername();
 

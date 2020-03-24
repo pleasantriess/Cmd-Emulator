@@ -1,0 +1,4 @@
+﻿  CmdEmulator.cpp
+  Tools.cpp
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\CmdEmulator.cpp(96,1): error C1010:  unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+C:\Users\Scott\Desktop\coding\github-repos\Cmd-Emulator\CmdEmulator\Tools.cpp(155,1): error C1010:  unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
